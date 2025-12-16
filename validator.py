@@ -1,6 +1,9 @@
 def check_password(password):
-    # Logic will go here
-    return False
+    # TODO: Add more checks later
+    if len(password) > 8:
+        return True
+    else:
+        return False
 
 if __name__ == "__main__":
     pwd = input("Enter a password to check: ")
