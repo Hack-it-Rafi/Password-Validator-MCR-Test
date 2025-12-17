@@ -1,5 +1,5 @@
-def check_password(password):
-    if len(password) < 9:
+def validate_input(password):
+    if len(password) <= 8:
         return False
 
     has_upper = any(char.isupper() for char in password)
@@ -9,4 +9,4 @@ def check_password(password):
 
 if __name__ == "__main__":
     pwd = input("Enter a password to check: ")
-    print(f"Password is valid: {check_password(pwd)}")
+    print(f"Password is valid: {validate_input(pwd)}")
