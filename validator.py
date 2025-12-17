@@ -1,5 +1,5 @@
 def validate_password(password):
-    if len(password) < 9:
+    if len(password) <= 8:
         return False
 
     has_upper = any(char.isupper() for char in password)
