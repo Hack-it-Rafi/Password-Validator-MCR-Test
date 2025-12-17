@@ -1,4 +1,4 @@
-def validate_password(password):
+def verify_password(password):
     if len(password) < 9:
         return False
 
@@ -9,4 +9,4 @@ def validate_password(password):
 
 if __name__ == "__main__":
     pwd = input("Enter a password to check: ")
-    print(f"Password is valid: {validate_password(pwd)}")
+    print(f"Password is valid: {verify_password(pwd)}")
