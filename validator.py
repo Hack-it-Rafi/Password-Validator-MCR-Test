@@ -3,7 +3,7 @@ def validate_password(password):
         return False
 
     has_upper = any(char.isupper() for char in password)
-    has_digit = any(char.isdigit() for char in password)
+    has_digit_2 = any(char.isdigit() for char in password)
 
     return has_upper and has_digit
 
