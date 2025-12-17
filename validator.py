@@ -5,7 +5,7 @@ def validate_password(password):
     has_upper = any(char.isupper() for char in password)
     has_digit_2 = any(char.isdigit() for char in password)
 
-    return has_upper and has_digit
+    return has_upper and has_digit_2
 
 if __name__ == "__main__":
     pwd = input("Enter a password to check: ")
